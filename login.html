@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Assignment Board</title>
+    <link type="text/css" rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="signup.js"></script>
+</head>
+
+<body>
+<div class="navbar">
+    <div class="title">
+        <a href="#"><b>Assignment Board</b></a>
+    </div>
+    <a href="login.html" class="right active">Log In</a>
+    <a href="signup.html" class="right">Sign Up</a>
+</div>
+
+<div class = "title">
+    <p class="lead center"><i>Here to help you keep track of your course assignments!</i></p>
+</div>
+
+
+<div class="content">
+    <div class="col-container">
+        <div class="col form">
+            <h1>Assignment Board</h1>
+            <h4 style="font-weight: normal"> This is a simple personal homework assignments management web application to manage your homework! It helps you manage your incomplete and complete assignments.
+            </h4>
+            <h3>Sign In!</h3>
+
+            <form action="login.php" id="form" method="post">
+                Username: <br><input type=text name="username" id="username" required onblur="emailVerification(username)"><br>
+                <p id="alert3"></p>
+                Password: <br><input type="password" name="password" id="password" required><br>
+                <p id="alert4"></p>
+                
+                <input type=submit value="Log In" onclick="formValidation(event)">
+                <input type="reset" value="Cancel">
+            </form>
+        </div>
+    </div>
+</div>
+
+<div id="footer" class="center">
+    Assignment Board -
+    <script type="text/javascript">
+        var d = new Date()
+        document.write(d.getFullYear())
+    </script>
+</div>
+</body>
+</html>
